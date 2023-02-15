@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/design_default_color_secondary"
     tools:context=".CreateNewNote">
 
     <EditText
@@ -12,9 +13,9 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:ems="10"
+        android:hint="Название"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:hint="Название"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,8 +26,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:ems="10"
-        android:hint="Описание"
         android:gravity="start|top"
+        android:hint="Описание"
         android:inputType="textMultiLine"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,9 +38,9 @@
         android:id="@+id/daysOfTheWeekSpinner"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
-        android:minHeight="48dp"
-        android:entries="@array/daysOfTheWeek"
         android:layout_marginTop="20dp"
+        android:entries="@array/daysOfTheWeek"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/setDescription" />
@@ -57,9 +58,10 @@
             android:id="@+id/first"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:background="@android:color/holo_red_dark"
             android:layout_weight="1"
-            android:text="1"></RadioButton>
+            android:background="@android:color/holo_red_dark"
+            android:text="1"
+            android:textColor="#B2EBF2"></RadioButton>
 
         <RadioButton
             android:id="@+id/second"
@@ -71,10 +73,10 @@
 
         <RadioButton
             android:id="@+id/third"
-            android:layout_weight="1"
-            android:background="@android:color/holo_green_dark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_dark"
             android:text="3"></RadioButton>
     </RadioGroup>
 
@@ -83,9 +85,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="@string/ButtuonText"
         android:background="@android:color/holo_purple"
         android:onClick="addNote"
+        android:text="@string/ButtuonText"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
